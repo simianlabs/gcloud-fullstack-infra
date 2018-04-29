@@ -1,0 +1,67 @@
+region = "europe-west2"
+
+region_zone = "europe-west2-a"
+
+project_name = "fullstack-infra"
+
+# app settings
+
+app_cidr_range = "10.154.13.0/24"
+
+app_machine_type = "g1-small"
+
+app_host_count = "3"
+
+app_host_image = "ubuntu-1604-xenial-v20180418"
+
+app_allowed_ports = ["80"]
+
+app_public_key_path = "./secret/my_id_rsa.pub"
+
+app_private_key_path = "./secret/my_id_rsa"
+
+# com setting
+
+com_cidr_range = "10.154.12.0/24"
+
+com_machine_type = "g1-small"
+
+com_host_count = "1"
+
+com_host_image = "ubuntu-1604-xenial-v20180418"
+
+com_allowed_ports = ["80", "8080", "443", "4505", "4506"]
+
+com_public_key_path = "./secret/my_id_rsa.pub"
+
+com_private_key_path = "./secret/my_id_rsa"
+
+# db setting
+
+db_cidr_range = "10.154.14.0/24"
+
+db_machine_type = "g1-small"
+
+db_host_count = "2"
+
+db_host_image = "ubuntu-1604-xenial-v20180418"
+
+db_allowed_ports = ["22", "3128"]
+
+db_public_key_path = "./secret/my_id_rsa.pub"
+
+db_private_key_path = "./secret/my_id_rsa"
+
+# mgm setting
+
+mgm_cidr_range = "10.154.10.0/24"
+
+mgm_machine_type = "g1-small"
+
+mgm_host_count = "1"
+
+mgm_host_image = "ubuntu-1604-xenial-v20180418"
+
+mgm_public_key_path = "./secret/my_id_rsa.pub"
+
+mgm_private_key_path = "./secret/my_id_rsa"
